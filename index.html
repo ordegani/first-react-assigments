@@ -40,12 +40,26 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    const BoxPage = () => {
+      return (
+        <Box component="span" sx={{border: '1px purple' }}>
+          <Box component="span" sx={{border: '1px green' }}>
+            <Box component="span" sx={{border: '1px blue' }}></Box>
+
+            <Box component="span" sx={{border: '1px pink' }}></Box>
+        </Box>
+      );
+    }
+
+
+
     const BoxPage = () => {
       return (
         <React.Fragment>
           <MDBBox color = blue>
             Div
-          </MDBBox color = green>
+          <MDBBox color = green>
           <MDBBox tag="span">
             Span
           </MDBBox color = pink>
